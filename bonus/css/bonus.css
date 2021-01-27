@@ -1,0 +1,41 @@
+/**************************************************
+  BONUS
+*/
+
+div, footer {
+  position: relative;
+}
+header div[class]::before,
+main div[class]::before,
+footer::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.1);
+}
+.logo:before {
+  content: "logo";
+}
+.menu:before {
+  content: "menu";
+}
+.slider:before {
+  content: "jumbotron";
+}
+.title:before {
+  content: "title";
+}
+.col:before {
+  content: "column";
+}
+.menu:before {
+  content: "menu";
+}
+footer:before {
+  content: "footer";
+}
